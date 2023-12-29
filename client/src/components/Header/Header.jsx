@@ -7,10 +7,10 @@ const Header = () => {
       <img src="./logo.png" alt="logo" width={100}  />
 
       <div className="flexCenter h-menu">
-        <a href=""> Residencies</a>
-        <a href="">Our Values</a>
-        <a href="">Contact us</a>
-        <a href="">Get Started</a>
+        <a href="#residencies"> Residencies</a>
+        <a href="#our-values">Our Values</a>
+        <a href="#contact-us">Contact us</a>
+        <a href="#get-started">Get Started</a>
         <button className="button">
         <a href="">Contact</a>
         </button>
@@ -22,3 +22,5 @@ const Header = () => {
 }
 
 export default Header;
+
+// React router dom - 

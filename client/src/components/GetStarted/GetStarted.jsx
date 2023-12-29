@@ -3,7 +3,7 @@ import "./GetStarted.css";
 
 const GetStarted = () => {
   return (
-    <section className="g-wrapper">
+    <section className="g-wrapper" id="get-started">
       <div className="paddings innerWidth g-container">
         <div className="flexColCenter inner-container">
           <span className="primaryText">Get Started with Homyz</span>
@@ -13,7 +13,7 @@ const GetStarted = () => {
             Find your residence soon.
           </span>
           <button className="button">
-            <a href="mailto:mtaquis@gmail.com">Get Started</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mtaquis@gmail.com">Get Started</a>
           </button>
         </div>
       </div>

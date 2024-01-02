@@ -128,16 +128,16 @@ export const toFav = asyncHandler(async (req, res) => {
 });
 
 //funtion to get all favs residencies
-export const getAllFavorites = asyncHandler(async(req, res) =>{
-    const {email} = req.body;
+export const getAllFavorites = asyncHandler(async (req, res) => {
+  const { email } = req.body;
 
-    try{
-      const allFavs = await prisma.user.findUnique({
-        where: {email},
-        select: {favResidenciesID: true}
-      })
-      res.status(200).send({ allFavs})
-    }catch(err){
-      throw new Error(err.message)
-    }
-})
+  try {
+    const allFavs = await prisma.user.findUnique({
+      where: { email },
+      select: { favResidenciesID: true },
+    });
+    res.status(200).send({ allFavs });
+  } catch (err) {
+    throw new Error(err.message);
+  }
+});
